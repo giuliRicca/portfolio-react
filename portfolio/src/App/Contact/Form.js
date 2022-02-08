@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import {StyledButton} from "../../Shared/Button.js";
 
-
 export const ContactForm = styled.form`
     ${StyledButton} {
         margin-top: .5rem;
@@ -11,6 +10,13 @@ export const ContactForm = styled.form`
     }
 
 `;
+
+export const Message = styled.div`
+    background-color: ${props=>props.success ? '#57c141' : '#ff472b'};
+    padding: ${props=>props.theme.paddings.xl};
+    color: ${props=>props.theme.colors.white};
+    border-radius: 10px;
+`
 
 export const ContactInput = styled.input`
     width: 100%;

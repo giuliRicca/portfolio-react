@@ -1,0 +1,48 @@
+{
+    "Header": {
+        "home": "Inicio",
+        "about": "Sobre Mi",
+        "contact": "Contacto"
+    },
+    "Home": {
+        "title": "Dessarrollador Full Stack",
+        "description": "Dessarrollador Junior apasionado por el código.",
+        "button": "Contacto"
+    },
+    "About": {
+        "title": "Sobre Mi",
+        "description": "Soy un estudiante de Ingeniería en Sistemas de 17 años. Apasionado por la programación y crear aplicaciones útiles. Trabajo duro y me disfruto de resolver problemas con tecnología.",
+        "skills": "Algunas de mis habilidades"
+    },
+    "Portfolio": {
+        "title": "Mi portfolio",
+        "projects": {
+            "1": {
+                "title": "prayers",
+                "description": "This is an app made with Django for users to post prayer requests. Made with Django"
+            },
+            "2": {
+                "title": "Aula Virtual",
+                "description": "Una simple aula virtual hecha con Django."
+            },
+            "3": {
+                "title": "Portfolio",
+                "description": "React app portfolio"
+            },
+            "4": {
+                "title": "Django-ecommerce",
+                "description": "Un simple Ecommerce hecho con Django. Que no requiere registrarse sino que usa cookies."
+            },
+            "5": {
+                "title": "Service Planning App",
+                "description": "Una app hecha con Django para crear y estructurar eventos para iglesias."
+            }
+        }
+    },
+    "Contact":{
+        "title": "Contacto",
+        "email": "Correo electrónico",
+        "message": "Tu Mensaje"
+    }
+    
+}

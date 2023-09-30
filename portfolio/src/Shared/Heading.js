@@ -19,10 +19,7 @@ export default Heading
 export const Text = styled.p`
     font-size: ${props => props.theme.font_sizes[props.size] || props.theme.font_sizes.sm};
     color: ${props => props.theme.colors[props.color] || props.theme.colors.font};
-
-    ${({uppercase}) => `
-        text-transform: uppercase;
-    `}
+    text-transform: ${props=>props.uppercase ? "uppercase" : ""};
 
     @media(min-width: ${props=>props.theme.breakpoints.xl}){
         font-size: ${props=> props.size==='xs' ? props.theme.font_sizes.md : props.theme.font_sizes.lg}

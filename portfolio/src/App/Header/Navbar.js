@@ -15,7 +15,7 @@ export const StyledNavbar = styled.nav`
     text-transform: uppercase;
     z-index: 1;
 
-    #right{
+    #left, #right{
         display:flex;
         align-items:center;
         justify-content: center;

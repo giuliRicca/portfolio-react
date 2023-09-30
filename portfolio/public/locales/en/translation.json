@@ -1,0 +1,48 @@
+{
+    "Header": {
+        "home": "Home",
+        "about": "About Me",
+        "contact": "Contact"
+    },
+    "Home": {
+        "title": "FULL STACK DEVELOPER",
+        "description": "A junior developer passionate about coding.",
+        "button": "Contact"
+    },
+    "About": {
+        "title": "About Me",
+        "description": "I'm a 17 years old Systems Engineering student. Passionate about coding and creating useful applications. Hard working and love to solve problems with tech.",
+        "skills": "Some of my skills"
+    },
+    "Portfolio": {
+        "title": "My portfolio",
+        "projects": {
+            "1": {
+                "title": "prayers",
+                "description": "This is an app made with Django for users to post prayer requests. Made with Django"
+            },
+            "2": {
+                "title": "Classroom app",
+                "description": "This is a Classroom app made with Django."
+            },
+            "3": {
+                "title": "My Portfolio",
+                "description": "React app portfolio"
+            },
+            "4": {
+                "title": "Django-ecommerce",
+                "description": "This is a simple Ecommerce app made with Django. It does not require the user to register instead is saves you cart in cookies."
+            },
+            "5": {
+                "title": "Service Planning App",
+                "description": "App made with Django for church service planning"
+            }
+        }
+    },
+    "Contact":{
+        "title": "Contact Me",
+        "email": "Email",
+        "message": "message"
+    }
+    
+}

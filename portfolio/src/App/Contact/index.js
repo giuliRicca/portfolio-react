@@ -5,8 +5,10 @@ import Heading from '../../Shared/Heading.js';
 import {Section} from '../../Shared/Section.js';
 import {ContactForm, ContactInput, Message} from "./Form.js";
 import ReCAPTCHA from "react-google-recaptcha";
+import {useTranslation} from 'react-i18next';
 
 const Contact = () => {
+    const {t} = useTranslation();
     const formId = 'jick6Lmt';
     const reCaptchaKey = "6Lc1SWMeAAAAABQ6aX7yvZDtjH9gdcEO4op84azU";
     const reCaptchaRef = useRef();
@@ -29,7 +31,6 @@ const Contact = () => {
             ...formData,
             [id]: value,
         });
-        console.log(reCaptchaRef.current.getValue())
     }
 
     const handleSubmit = async (event)=>{
@@ -70,7 +71,7 @@ const Contact = () => {
     
     return (
         <Section id='contact' align='center'>
-            <Heading size='xl'>Contact Me</Heading>
+            <Heading size='xl'>{t('Contact.title')}</Heading>
             <ContactForm onSubmit={handleSubmit}>
 
             {message ? 
@@ -80,10 +81,10 @@ const Contact = () => {
                 ""
             }
                 
-                <ContactInput placeholder='Email' id="email" 
+                <ContactInput placeholder={t('Contact.email')} id="email" 
                 type='email' onChange={handleInputChange} value={formData.email} required/>
 
-                <ContactInput placeholder='Message' id="message" 
+                <ContactInput placeholder={t('Contact.message')} id="message" 
                 type='textarea' onChange={handleInputChange} value={formData.message}  required/>
 
                 <ReCAPTCHA  ref={reCaptchaRef}
